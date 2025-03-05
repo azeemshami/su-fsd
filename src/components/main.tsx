@@ -31,6 +31,7 @@ const Main = () => {
       const response = await readCSV(option);
       setData(response);
     } catch (error) {
+      console.log("error", error);
       setData([]);
     } finally {
       setLoading(false);
